@@ -23,13 +23,15 @@ Documentation: [English version](https://github.com/luolongfei/freenom/blob/mast
 
 [☕  验证](#--验证)
 
-[🍺  信仰](#--信仰)
+[📋  捐赠名单 Donate List](#--捐赠名单-donate-list)
 
 [❤  捐赠 Donate](#--捐赠-donate)
 
-[📋  捐赠名单 Donate List](#--捐赠名单-donate-list)
+[🍺  信仰](#--信仰)
 
 [🌚  作者](#--作者)
+
+[📰  更新日志](#--更新日志) （每次新版本发布，可以参考此日志决定是否更新）
 
 [🎉  鸣谢](#--鸣谢)
 
@@ -239,6 +241,9 @@ $ cd /data/wwwroot/freenom/ && php run
 如果`Freenom`改变算法导致此项目失效，请提 [issue](https://github.com/luolongfei/freenom/issues) 告知，我会及时修复，本项目长期维护。
 欢迎`star`~
 
+### 📋  捐赠名单 Donate List
+非常感谢「 [这些用户](https://github.com/luolongfei/freenom/wiki/Donate-List) 」对本项目的捐赠支持！
+
 ### ❤  捐赠 Donate
 如果你觉得本项目真的有帮助到你并且想回馈作者，感谢你的捐赠。
 #### PayPal: [https://www.paypal.me/mybsdc](https://www.paypal.me/mybsdc)
@@ -250,9 +255,6 @@ $ cd /data/wwwroot/freenom/ && php run
 
 **你的star或者小额打赏是我长期维护此项目的动力所在，由衷感谢每一位支持者，“每一次你花的钱都是在为你想要的世界投票”。**
 
-### 📋  捐赠名单 Donate List
-非常感谢「 [这些用户](https://github.com/luolongfei/freenom/wiki/Donate-List) 」对本项目的捐赠支持！
-
 ### 🍺  信仰
 
 ![南京市民李先生](https://s2.ax1x.com/2020/02/04/1Bm3Ps.jpg "南京市民李先生")
@@ -262,6 +264,54 @@ $ cd /data/wwwroot/freenom/ && php run
 ### 🌚  作者
 - 主程序以及框架：[@luolongfei](https://github.com/luolongfei)
 - 英文版文档：[@肖阿姨](#)
+
+### 📰  更新日志
+
+此处省略了很多较为久远的记录，以前的日志只记录了比较大的变更，以后的日志会尽可能详尽一些。
+
+#### [Unreleased]
+
+##### Added
+
+- 支持通过 Docker 方式部署，简化部署流程
+- 支持通过 Server酱 以及 企业微信 推送通知
+
+##### Changed
+
+- 整合各种送信方式，优化相关逻辑
+- 支持交互式安装，免去手动修改配置的繁琐操作
+
+#### [v0.2.5] - 2020-06-23
+
+##### Added
+
+- 支持在 Github Actions 上执行（应 GitHub 官方要求，已移除此功能）
+
+#### [v0.2.2] - 2020-02-06
+
+##### Added
+
+- 新增通过 Telegram bot 送信
+- 各种送信方式支持单独开关
+
+#### [v0.2] - 2020-02-01
+
+##### Added
+
+- 支持多个 Freenom 账户进行域名续期
+
+##### Changed
+
+- 进行了彻底的重构，框架化
+- 优化邮箱模块，支持自动选择合适的邮箱配置
+
+*（版本在 v0.1 到 v0.2 期间代码有过很多次变更，之前没有发布版本，故此处不再赘述相关变更日志）*
+
+#### [v0.1] - 2018-8-13
+
+##### Added
+
+- 初版，开源，基础的续期功能
 
 ### 🎉  鸣谢
 - [PHPMailer](https://github.com/PHPMailer/PHPMailer/) （邮件发送功能依赖此库）
