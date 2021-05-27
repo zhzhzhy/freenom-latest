@@ -167,7 +167,7 @@ $ wget -qO- get.docker.com | bash
 ```
 
 说明：请使用 KVM 架构的 VPS，OpenVZ 架构的 VPS 不支持安装 Docker，另外 CentOS 8 不支持用此脚本来安装 Docker。
-更多关于 Docker 安装的内容参考 [官方文档](https://docs.docker.com/install/) 。
+更多关于 Docker 安装的内容参考 [Docker 官方安装指南](https://docs.docker.com/engine/install/) 。
 
 ##### 1.2 对 Docker 的一些命令操作
 
@@ -230,12 +230,6 @@ $ docker run -d --name freenom --restart always -v $(pwd):/conf -v $(pwd)/logs:/
 至此，你的自动续期容器就跑起来了，执行`ls -a`后你就可以看到在你的当前目录下，有一个`.env`文件和一个`logs`目录，`logs`目录里面存放的是程序日志，
 而`.env`则是配置文件，现在直接执行`vim .env`将`.env`文件里的所有配置项改为你自己的并保存即可。然后重启容器，如果配置正确的话，便很快可以收到相关邮件。
 
-> 如何验证你的配置是否正确呢？
->
-
-*修改并保存`.env`文件后，执行`docker restart freenom`重启容器，然后执行`docker logs freenom`查看输出内容，观察输出内容中有`执行成功`字样，
-则表示配置无误。如果你还来不及配置送信邮箱等内容，可先停用邮件功能。*
-
 <details>
     <summary>点我查看 .env 文件中部分配置项的含义</summary>
 <br>
@@ -257,6 +251,12 @@ $ docker run -d --name freenom --restart always -v $(pwd):/conf -v $(pwd)/logs:/
 *更多配置项含义，请参考`.env`文件中的注释。*
 
 </details>
+
+> 如何验证你的配置是否正确呢？
+>
+
+*修改并保存`.env`文件后，执行`docker restart freenom`重启容器，然后执行`docker logs freenom`查看输出内容，观察输出内容中有`执行成功`字样，
+则表示配置无误。如果你还来不及配置送信邮箱等内容，可先停用邮件功能。*
 
 ##### 2.2 后期容器处理常用命令
 
