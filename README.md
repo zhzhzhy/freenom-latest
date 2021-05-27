@@ -445,26 +445,26 @@ $ cd /data/wwwroot/freenom/ && php run
 - 整合各种送信方式，优化相关逻辑
 - 支持交互式安装，免去手动修改配置的繁琐操作
 
-#### [0.3] - 2021-05-27
+#### [v0.3](https://github.com/luolongfei/freenom/releases/tag/v0.3) - 2021-05-27
 
 ##### Added
 
 - 追加 Docker 版本，支持通过 Docker 方式部署，简化部署流程
 
-#### [0.2.5] - 2020-06-23
+#### [v0.2.5](https://github.com/luolongfei/freenom/releases/tag/v0.2.5) - 2020-06-23
 
 ##### Added
 
 - 支持在 Github Actions 上执行（应 GitHub 官方要求，已移除此功能）
 
-#### [0.2.2] - 2020-02-06
+#### [v0.2.2](https://github.com/luolongfei/freenom/releases/tag/v0.2.2) - 2020-02-06
 
 ##### Added
 
 - 新增通过 Telegram bot 送信
 - 各种送信方式支持单独开关
 
-#### [0.2] - 2020-02-01
+#### [v0.2](https://github.com/luolongfei/freenom/releases/tag/v0.2) - 2020-02-01
 
 ##### Added
 
@@ -478,7 +478,7 @@ $ cd /data/wwwroot/freenom/ && php run
 
 *（版本在 v0.1 到 v0.2 期间代码有过很多次变更，之前没有发布版本，故此处不再赘述相关变更日志）*
 
-#### [0.1] - 2018-8-13
+#### [v0.1](https://github.com/luolongfei/freenom/releases/tag/v0.1) - 2018-8-13
 
 ##### Added
 
