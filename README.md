@@ -19,7 +19,7 @@ Documentation: [English version](https://github.com/luolongfei/freenom/blob/mast
 
 [⛵  通过 Docker 方式部署](#--方式一通过-docker-部署最简单的方式)（最简单的方式，推荐）
 
-[🕹  通过腾讯云函数（SCF）部署](#--方式二通过腾讯云函数（SCF）部署)
+[🕹  通过腾讯云函数（SCF）部署](#--方式二通过腾讯云函数scf部署)
 
 [🚧  直接拉取源码部署](#--方式三直接拉取源码部署)
 
@@ -144,7 +144,7 @@ Telegram bot 有两个配置项，一个是`chatID`（对应`.env`文件中的`T
 
 ***
 
-*与通知相关的设置到此就完成了，下面开始讲本项目的两种使用方式，一种是通过 Docker，一种是直接拉取源码部署，推荐使用 Docker 方式，无需纠结环境。*
+*与通知相关的设置到此就完成了，下面开始讲本项目的三种使用方式，一种是通过 Docker，另一种是通过腾讯云函数，再一种是直接拉取源码部署，推荐使用 Docker 方式，无需纠结环境。*
 
 ### ⛵  方式一：通过 Docker 部署（最简单的方式）
 
@@ -303,13 +303,13 @@ $ docker stats --no-stream
 此版本为特别版，支持通过腾讯云函数部署，与主分支版本不兼容，版本号为`v0.3_scf`，下载地址：
 [https://github.com/luolongfei/freenom/archive/refs/tags/v0.3_scf.zip](https://github.com/luolongfei/freenom/archive/refs/tags/v0.3_scf.zip)
 
-下载后解压到你能找到的任意目录，将得到一个文件夹，后期将通过文件夹的形式上传到腾讯云函数。
+下载后解压到你能找到的任意目录，你将得到一个文件夹，后期将通过文件夹的形式上传到腾讯云函数。
 
 #### 2、创建腾讯云函数
 
 直接访问腾讯云函数控制台创建云函数： [https://console.cloud.tencent.com/scf/list-create](https://console.cloud.tencent.com/scf/list-create) ，
-按照下图所示的说明进行创建。如果无法看到图片，可访问： [https://github.com/luolongfei/freenom/blob/master/resources/screenshot/scf.png](https://github.com/luolongfei/freenom/blob/master/resources/screenshot/scf.png) 
-或者 [https://z3.ax1x.com/2021/06/01/2nKCF0.png](https://z3.ax1x.com/2021/06/01/2nKCF0.png) 
+按照下图所示的说明进行创建。如果无法看清图片，可访问： [https://github.com/luolongfei/freenom/blob/master/resources/screenshot/scf.png](https://github.com/luolongfei/freenom/blob/master/resources/screenshot/scf.png) 
+或者 [https://z3.ax1x.com/2021/06/01/2nKCF0.png](https://z3.ax1x.com/2021/06/01/2nKCF0.png) 查看原图。 
 
 [![scf01](https://z3.ax1x.com/2021/06/01/2nKCF0.png)](https://imgtu.com/i/2nKCF0)
 
