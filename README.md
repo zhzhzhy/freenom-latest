@@ -17,11 +17,17 @@ Documentation: [English version](https://github.com/luolongfei/freenom/blob/mast
 
 [📪  配置发信邮箱](#--配置发信邮箱)
 
+<hr>
+
+*（下面三种部署方式，选择其中一种即可）*
+
 [⛵  通过 Docker 方式部署](#--方式一通过-docker-部署最简单的方式)（最简单的方式，推荐）
 
 [🕹  通过腾讯云函数（SCF）部署](#--方式二通过腾讯云函数scf部署)
 
 [🚧  直接拉取源码部署](#--方式三直接拉取源码部署)
+
+<hr>
 
 [📋  捐赠名单 Donate List](#--捐赠名单-donate-list)
 
@@ -263,8 +269,8 @@ docker run -d --name freenom --restart always -v $(pwd):/conf -v $(pwd)/logs:/ap
 > 如何验证你的配置是否正确呢？
 >
 
-*修改并保存`.env`文件后，执行`docker restart freenom`重启容器，然后执行`docker logs freenom`查看输出内容，观察输出内容中有`执行成功`字样，
-则表示配置无误。如果你还来不及配置送信邮箱等内容，可先停用邮件功能。*
+修改并保存`.env`文件后，执行`docker restart freenom`重启容器，等待 5 秒钟左右，然后执行`docker logs freenom`查看输出内容，
+观察输出内容中有`执行成功`字样，则表示配置无误。如果你还来不及配置送信邮箱等内容，可先停用邮件功能。
 
 ##### 2.2 后期容器处理常用命令
 
