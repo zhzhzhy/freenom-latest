@@ -151,9 +151,9 @@ Telegram bot 有两个配置项，一个是`chatID`（对应`.env`文件中的`T
 
 <hr>
 
-*（Docker 仓库地址为： [https://hub.docker.com/r/luolongfei/freenom](https://hub.docker.com/r/luolongfei/freenom) ，同样欢迎 star 。
+Docker 仓库地址为： [https://hub.docker.com/r/luolongfei/freenom](https://hub.docker.com/r/luolongfei/freenom) ，同样欢迎 star 。
 此镜像支持的架构为`linux/amd64`，`linux/arm64`，`linux/ppc64le`，`linux/s390x`，`linux/386`，`linux/arm/v7`，`linux/arm/v6`，
-理论上支持`群晖`、`威联通`、`树莓派`以及各种类型的`VPS`）*
+理论上支持`群晖`、`威联通`、`树莓派`以及各种类型的`VPS`。
 
 #### 1、安装 Docker
 
